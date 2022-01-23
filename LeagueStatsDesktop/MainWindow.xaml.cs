@@ -66,8 +66,6 @@ namespace LeagueStatsDesktop
                 NavBarContent.Children.Add(btn);
             }
 
-            
-
         }
 
         

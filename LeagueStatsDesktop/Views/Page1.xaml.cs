@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LeagueStatsDesktop.EventHelpers;
 
 namespace LeagueStatsDesktop.Views
 {
@@ -32,7 +33,10 @@ namespace LeagueStatsDesktop.Views
 
         private void Data_Check(object sender, RoutedEventArgs e)
         {
-
+            bool pathExist = LeagueStatsDesktop.DataContext.PathExist("", out bool _);
+            TxtMessage message = new TxtMessage("Xml Exist", "False");
+            ConsoleOutput.Text += message.ToString();
+            
         }
     }
 }

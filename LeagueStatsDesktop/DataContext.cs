@@ -13,17 +13,16 @@ namespace LeagueStatsDesktop
 
         public static string FilesPath { get { return _filesPath; } }
 
-        public static Boolean PathExist(string pathToDir, out Boolean x)
+        public static bool PathExist(string pathToDir, out bool x)
         {
             x = Directory.Exists(pathToDir) ? true : false;
             return x;
         }
 
-        public static Boolean FileExist(string dir, string filepath, out Boolean x)
+        public static bool FileExist(string dir, string filepath, out Boolean x)
         {
             x = File.Exists($"{dir}/{filepath}") ? true : false;
             return x;
         }
-
     }
 }
