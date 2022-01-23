@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Navigation\" />
+    <Folder Include="EventHelpers\" />
+    <Folder Include="Files\" />
+    <Folder Include="XmlProvider\" />
   </ItemGroup>
 
 </Project>
