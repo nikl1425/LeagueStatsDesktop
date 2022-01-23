@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LeagueStatsDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="600" Width="1000"
+        Loaded="Window_Loaded"
+        Initialized="Window_Initialized">
 
-    </Grid>
+
+    <Border Margin="5" BorderThickness="2" BorderBrush="Black">
+        <Grid Background="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Grid.Row="0" Margin="1" Grid.ColumnSpan="2">
+                <!-- First Row Grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "*" />
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1">
+                    <StackPanel Background="LightGray"  >
+                        <Label HorizontalAlignment="Center" Margin="10"  Content="Navigation" FontSize="20" FontWeight="Bold" FontFamily="Arial" />
+                    </StackPanel>
+                </Border>
+
+                <!-- Nav bar content -->
+                <Grid Grid.Row="1" Grid.Column="1" Name="NavRow">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Name="NavBarContent">
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            
+            <!-- Main content Here we change content dependent on what we choose in navbar -->
+            <Frame Grid.Row="1" Name="MainContent"  ContentRendered="myFrame_ContentRendered" />
+
+        </Grid>
+    </Border>
+
 </Window>
+    
+    

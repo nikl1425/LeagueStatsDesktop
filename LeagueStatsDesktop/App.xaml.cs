@@ -13,5 +13,12 @@ namespace LeagueStatsDesktop
     /// </summary>
     public partial class App : Application
     {
+        void ChangeMainContent(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
+
+
+    
 }
