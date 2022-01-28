@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueStatsDesktop", "LeagueStatsDesktop\LeagueStatsDesktop.csproj", "{2C432910-D208-4D35-963D-3E2B408576CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeagueStatsDesktop", "LeagueStatsDesktop\LeagueStatsDesktop.csproj", "{2C432910-D208-4D35-963D-3E2B408576CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{DEBB6233-1A9C-428B-BBF1-7BFC3E0F2ECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataService", "DataService\DataService.csproj", "{DEBB6233-1A9C-428B-BBF1-7BFC3E0F2ECB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueOfLegendsService", "LeagueOfLegendsService\LeagueOfLegendsService.csproj", "{253F512D-6B6C-470F-81D0-8ACE09ADAF4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlHandling", "XmlHandling\XmlHandling.csproj", "{44639D13-42D0-4052-8C51-A4B4018BD7D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{DEBB6233-1A9C-428B-BBF1-7BFC3E0F2ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEBB6233-1A9C-428B-BBF1-7BFC3E0F2ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEBB6233-1A9C-428B-BBF1-7BFC3E0F2ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253F512D-6B6C-470F-81D0-8ACE09ADAF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253F512D-6B6C-470F-81D0-8ACE09ADAF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253F512D-6B6C-470F-81D0-8ACE09ADAF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253F512D-6B6C-470F-81D0-8ACE09ADAF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44639D13-42D0-4052-8C51-A4B4018BD7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44639D13-42D0-4052-8C51-A4B4018BD7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44639D13-42D0-4052-8C51-A4B4018BD7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44639D13-42D0-4052-8C51-A4B4018BD7D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

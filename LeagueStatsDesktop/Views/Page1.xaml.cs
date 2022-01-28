@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LeagueStatsDesktop.EventHelpers;
+using XmlHandling;
 
 namespace LeagueStatsDesktop.Views
 {
@@ -21,21 +22,33 @@ namespace LeagueStatsDesktop.Views
     /// </summary>
     public partial class Page1 : Page
     {
+        string fileName = "xmlDocData.xml";
+
+        private XmlHelper xmlHelper = new XmlHelper();
+        
+        private readonly string _saveFilePath = LeagueStatsDesktop.DataContext.GetProjPath(true);
+
         public Page1()
         {
             InitializeComponent();
+            xmlHelper.FileName = fileName;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            var apiKey = "RGAPI-6b4cc2cf-580f-459d-83a0-efcd2f802b02";
         }
 
         private void Data_Check(object sender, RoutedEventArgs e)
         {
-            bool pathExist = LeagueStatsDesktop.DataContext.PathExist("", out bool _);
-            TxtMessage message = new TxtMessage("Xml Exist", "False");
+
+            bool pathExist = LeagueStatsDesktop.DataContext.FileExist(LeagueStatsDesktop.DataContext.FilesPath, "test.xml", out bool _);
+            TxtMessage message = new TxtMessage("Xml Exist", pathExist.ToString());
+
             ConsoleOutput.Text += message.ToString();
+
+       
+            xmlHelper.CreateXmlDocument(_saveFilePath);
             
         }
     }
